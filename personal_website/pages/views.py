@@ -11,4 +11,4 @@ def about_page_view(request):
         "name":"Alice",
         "age":33,
     }
-    return render(request, "pages/about.html")
+    return render(request, "pages/about.html",context)
