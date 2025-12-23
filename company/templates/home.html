@@ -1,0 +1,10 @@
+<h1>Company Homepage</h1>
+<p>the current date and time is: {% now "DATETIME_FORMAT" %}</p>
+<P>There are {{inventory_list| length}} items of inventory.
+    <ul>
+        {% for item in inventory_list %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</P>
+<p>{{ greeting }}</p>
