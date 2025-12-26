@@ -12,3 +12,10 @@ def home_page_view(request):
 
 class AboutPageView(TemplateView):
     template_name = "about.html"
+
+    def get_context_data(self, **kwargs):
+
+        context =super().get_context_data(**kwargs)
+        context["contact_address"]="123 Main Street"
+        context["pone_number"]="555-555-5555"
+        return context
