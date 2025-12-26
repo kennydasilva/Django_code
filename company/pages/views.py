@@ -17,5 +17,5 @@ class AboutPageView(TemplateView):
 
         context =super().get_context_data(**kwargs)
         context["contact_address"]="123 Main Street"
-        context["pone_number"]="555-555-5555"
+        context["phone_number"]="555-555-5555"
         return context
